@@ -5,6 +5,7 @@ import json
 import ast
 import faiss
 import openai
+import streamlit as st
 
 
 def get_embeddings(api_key, text):
@@ -47,6 +48,8 @@ def semantic_search(api_key, query, k):
     '''
     Get the top k similar text to the query
     '''
+    if not api_key:
+        st.error("This chatbot communicates with the OpenAI API. Please enter your OpenAI API key to use it.")
 
     # Get the embedding of the query from OpenAI API
     query_embedding_response = get_embeddings(api_key, query)
