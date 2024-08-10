@@ -1,6 +1,6 @@
 streamlit
-openai>=1.4
-numpy==1.24
+openai==1.4
+numpy==1.26
 pandas==2.2
 requests
 faiss-cpu==1.8
