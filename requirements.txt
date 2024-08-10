@@ -4,3 +4,4 @@ numpy==1.26
 pandas==2.2
 requests
 faiss-cpu==1.8
+setuptools
