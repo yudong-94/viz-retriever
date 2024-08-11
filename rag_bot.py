@@ -45,4 +45,4 @@ if prompt := st.chat_input():
     ## display visualizations
     for i in range(len(viz_lists)):
         st.chat_message("assistant").write(viz_lists[i])
-        st.components.v1.html(tableau_code_lists[i], height=600, width = 800)
+        st.components.v1.html(tableau_code_lists[i], height=800, width = 800)
